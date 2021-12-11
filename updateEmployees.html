@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Update Records</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+</head>
+<body style="background-color: #E5E5E5">
+<a href="admin.html"><button style="color: cadetblue">Back</button></a>
+<h1 style="text-align: center;color: dodgerblue">Update Records</h1>
+<br>
+<div style="text-align: center">
+  <form action="UpdateEmployees.php" method="post">
+    <h4 >Employees Id : </h4><label>
+    <input type="text" name="employee_id" placeholder="mo-235">
+  </label><br>
+    <h4> Designation : </h4><label>
+    <input type="text" name="designation" placeholder="Manager">
+  </label><br>
+    <h4> Salary: </h4><label>
+    <input type="number" name="salary" placeholder="25000">
+  </label><br>
+    <input type="submit" value="Update Records" class="btn-secondary">
+  </form>
+</div>
+
+</body>
+</html>

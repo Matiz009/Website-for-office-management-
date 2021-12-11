@@ -2,30 +2,33 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Sign Up</title>
+    <title>Admin Portal</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
 </head>
 <body style="background-color: lightcyan">
-<h1 style="text-align: center;color: darkblue">Admin Controls</h1>
+<a href="#" ><h6 style="float: left;margin-top: 1%;margin-left: 2%">Add Attendance</h6></a>
+<a href="#" ><h6 style="float: right;margin-top: 1%;color: darkgreen;margin-right: 2%">View Attendance</h6></a>
+<h1 style="text-align: center;color: darkblue;margin-right: 9%">Admin</h1>
+
 <hr>
 <div style="text-align: center">
     <form action="insert-for-Employee.php" method="post">
         <h4 >Employee ID : </h4><label>
-        <input type="text" name="employee-id">
+        <input type="text" name="employee-id" placeholder="mo-2345">
     </label><br>
         <h4>First Name : </h4><label>
-        <input type="text" name="fName">
+        <input type="text" name="fName" placeholder="Ali">
     </label><br>
         <h4>Last Name : </h4><label>
-        <input type="text" name="lName">
+        <input type="text" name="lName" placeholder="Raza">
 
         <h4>Designation: </h4><label>
-        <input type="text" name="designation">
+        <input type="text" name="designation" placeholder="Assistant">
     </label><br>
         <h4>Salary: </h4><label>
-        <input type="text" name="salary">
+        <input type="number" name="salary" placeholder="40000">
     </label><br>
         <h4>Date of Joining: </h4><label>
         <input type="Date" name="date-of-join">
@@ -33,6 +36,8 @@
         <hr>
         <input type="submit" value="Insert Record" class="btn-danger">
         <a href="view-for-Employees.php"><input type="button" value="View Records" class="btn-success"></a>
+        <br><br>
+        <a href="updateEmployees.html"><input type="button" value="Update Records" class="btn-secondary"></a>
     </label>
     </form>
 </div>
